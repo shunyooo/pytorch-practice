@@ -3,8 +3,9 @@ services:
   jupyterlab:
     image: syunyooo/pytorch-nvidia-jupyterlab
     ports:
-      - 8888:8888
+      - 80:8888
     volumes:
       - ./:/root/user/work
     working_dir: /root/user/work
     command: sh /run.sh
+    restart: true
