@@ -8,4 +8,4 @@ services:
       - ./:/root/user/work
     working_dir: /root/user/work
     command: sh /run.sh
-    restart: true
+    restart: always
