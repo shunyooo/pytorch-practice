@@ -4,5 +4,5 @@ RUN pip install pip setuptools -U && pip install --upgrade pip && pip install -U
 
 WORKDIR /logs
 
-ENTRYPOINT ["tensorboard", "--logdir", "/logs"]
+ENTRYPOINT ["tensorboard", "--logdir", "/logs", "--bind_all"]
 CMD []
